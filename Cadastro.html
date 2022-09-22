@@ -66,8 +66,8 @@
 </head>
 <body>
     <div>
-        <h1><strong>Fomulário de Cadastro</strong></h1>
-        <p>Crie sua conta</p>
+        <h1 id="titulo"><strong>Fomulário de Cadastro</strong></h1>
+        <p id="subtitulo">Crie sua conta</p>
         <br>
     </div>
 
@@ -75,22 +75,22 @@
         <fieldset>
             <div>
                 <label for="nome"><strong>Nome:</strong></label>
-                <input class="namecolor" type="text" name="Nome" id="Nome" />
+                <input class="namecolor" type="text" name="Nome" id="Nome" required />
             </div>
             <br/>
             <div>
                 <label for="email"><strong>E-mail:</strong></label>
-                <input class="emailcolor" type="email" name="email" id="email" />
+                <input class="emailcolor" type="email" name="email" id="email" required />
             </div>
             <br/>
 
             <div>
             <label for="senha"><strong>Senha:</strong></label>
-            <input class="senhacolor" type="password" name="senha" id="senha" />
+            <input class="senhacolor" type="password" name="senha" id="senha" required />
             </div>
             
             <br>
-            <button class="btn1" type="button" onclick="alert('Cadastro concluido')">
+            <button class="btn1" type="submit" onclick="alert('Cadastro concluido')">
                 Cadastrar
             </button>
             <br>
