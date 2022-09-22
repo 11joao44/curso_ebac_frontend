@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
+    <title>Cadastro</title>
     <STyle>
         .btn1{
             background-color: rgb(243, 243, 243);
@@ -41,21 +41,36 @@
 </STyle>
 </head>
 <body>
-    <h1><strong>Fomulário de Cadastro</strong></h1>
-    <form>
-        <label for="nome"><strong>Nome:</strong></label>
-        <input class="namecolor" type="text" />
-        <br />
-        <label for="email"><strong>E-mail:</strong></label>
-        <input class="emailcolor" type="email" />
-        <br />
-        <label for="senha"><strong>Senha:</strong></label>
-        <input class="senhacolor" type="password" />
-        <br />
+    <div>
+        <h1><strong>Fomulário de Cadastro</strong></h1>
+        <p>Crie sua conta</p>
         <br>
-        <button class="btn1" type="button" onclick="alert('Cadastro concluido')">
-            Cadastrar
-        </button>
+    </div>
+
+    <form>
+        <fieldset>
+            <div>
+                <label for="nome"><strong>Nome:</strong></label>
+                <input class="namecolor" type="text" name="Nome" id="Nome" />
+            </div>
+            <br/>
+            <div>
+                <label for="email"><strong>E-mail:</strong></label>
+                <input class="emailcolor" type="email" name="email" id="email" />
+            </div>
+            <br/>
+
+            <div>
+            <label for="senha"><strong>Senha:</strong></label>
+            <input class="senhacolor" type="password" name="senha" id="senha" />
+            </div>
+            
+            <br>
+            <button class="btn1" type="button" onclick="alert('Cadastro concluido')">
+                Cadastrar
+            </button>
+            <br>
+        </fieldset>
     </form>
 </body>
 </html> 
