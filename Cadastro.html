@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <STyle>
+        .btn1{
+            background-color: rgb(243, 243, 243);
+            color: black;
+            width: 76px;
+            height: 23px;
+            border: 1.3px black solid;
+            border-radius: 5px;
+            font-style: italic;
+            cursor: pointer;
+        }
+        .btn1:hover{
+            background-color: rgb(228, 228, 228);
+            color: black;
+            width: 76px;
+            height: 23px;
+            border: 1.3px black solid;
+            border-radius: 5px;
+            font-style: italic;
+            cursor: pointer;
+        }
+        .namecolor{
+            background-color: whitesmoke;
+            
+        }
+        .emailcolor{
+            background-color: whitesmoke;
+            
+        }
+        .senhacolor{
+            background-color: whitesmoke;
+            
+        }
+</STyle>
+</head>
+<body>
+    <h1><strong>Fomulário de Cadastro</strong></h1>
+    <form>
+        <label for="nome"><strong>Nome:</strong></label>
+        <input class="namecolor" type="text" />
+        <br />
+        <label for="email"><strong>E-mail:</strong></label>
+        <input class="emailcolor" type="email" />
+        <br />
+        <label for="senha"><strong>Senha:</strong></label>
+        <input class="senhacolor" type="password" />
+        <br />
+        <br>
+        <button class="btn1" type="button" onclick="alert('Cadastro concluido')">
+            Cadastrar
+        </button>
+    </form>
+</body>
+</html>
