@@ -4,11 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./fomulario.css" media="" />
-    <title>Cadastro</title>
+    <title>Formulario</title>
     <STyle>
         .btn1{
             background-color: rgb(243, 243, 243);
+            color: black;
+            width: 76px;
+            height: 24px;
+            border: 1.3px black solid;
+            border-radius: 4px;
+            font-style: italic;
+            cursor: pointer;
+        }
+        .btn1:hover{
+            background-color: rgb(228, 228, 228);
             color: black;
             width: 76px;
             height: 23px;
@@ -19,79 +28,59 @@
         }
         .namecolor{
             background-color: white;
-            width: 174px;
-            height: 17px;
-            left: 50%S;
-            
-            
+            margin-top: 5px;
+            margin-left: 6px;
         }
         .emailcolor{
             background-color: white;
-            width: 170px;
-            height: 17px;
+            margin-top: 5px;
             
         }
         .senhacolor{
             background-color: white;
-            width: 170px;
-            height: 17px;
-            
+            margin-top: 5px;
+            margin-left: 4.8px;
         }
         .namecolor:hover{
             background-color: whitesmoke;
-            width: 170px;
-            height: 17px;
-            
+            margin-top: 5px;
+            margin-left: 6px;
         }
         .emailcolor:hover{
             background-color: whitesmoke;
-            width: 165px;
-            height: 17px;
+            margin-top: 5px;
             
         }
         .senhacolor:hover{
             background-color: whitesmoke;
-            width: 170px;
-            height: 17px;
-            
+            margin-top: 5px;
+            margin-left: 4.8px;
+        }
+        #titulo{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #subtitulo{
+            font-family: Arial, Helvetica, sans-serif;
         }
 </STyle>
 </head>
 <body>
-    <div>
-        <br>
-        <h1 id="titulo"><strong>Fomulário de Cadastro</strong></h1>
-        <br>
-        <p id="subtitulo">Crie sua conta</p>
-        <br>
-    </div>
-<br>
+    <h1 id="titulo"><strong>Fomulário de Cadastro</strong></h1>
+    <p id="subtitulo">Preencha abaixo com suas informações:</p>
     <form>
-        <fieldset>
-            <div>
-                <label for="nome"><strong>Nome:</strong></label>
-                <input class="namecolor" type="text" name="Nome" id="Nome" required />
-            </div>
-            <br/>
-            <div>
-                <label for="email"><strong>E-mail:</strong></label>
-                <input class="emailcolor" type="email" name="email" id="email" required />
-            </div>
-            <br/>
-
-            <div>
-            <label for="senha"><strong>Senha:</strong></label>
-            <input class="senhacolor" type="password" name="senha" id="senha" required />
-            </div>
-            
-            <br>
-            <div>
-            <button class="btn1" type="submit" onclick="alert('Cadastro concluido')">
-        Cadastrar
-            </button>
-            </div>
-            <br>
-        </fieldset>
+        <label for="nome"><strong>Nome:</strong></label>
+        <input class="namecolor" type="text" id="nome" required />
+        <br />
+        <label for="email"><strong>E-mail:</strong></label>
+        <input class="emailcolor" type="email" id="email" required />
+        <br />
+        <label for="senha"><strong>Senha:</strong></label>
+        <input class="senhacolor" type="password" id="senha" required />
+        <br>
+        <br>
+        <button class="btn1" type="button" onclick="alert('Cadastro concluido')">
+            Cadastrar
+        </button>
     </form>
 </body>
-</html> 
+</html>
