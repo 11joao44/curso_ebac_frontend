@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.cabeçalho {
+    background: rgb(24,24,24);
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgb(202, 3, 3) 10%, rgb(180, 8, 8) 25%, rgb(137, 0, 0) 40%, rgba(8,8,8,1) 96%);
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+}
+
+.rodape {
+    background: rgb(24,24,24);
+    background: linear-gradient(90deg, rgba(8,8,8,1) 4%, rgba(137,0,0,1) 86%, rgba(180,8,8,1) 50%, rgba(202,3,3,1) 15%, rgba(255,0,0,1) 0%);
+    padding: 8px;
+}
+
+#gamespage, #novidadespage, #enter, #tech {
+    background-color: rgb(8, 8, 8);
+}
+
+h1 {
+    font-family: 'Montserrat';
+}
+
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.articles article h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.creation-date {
+    font-size: 0.8em;
+    color: white;
+}
+
+body > header {
+    padding: 30px 10%;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header li {
+display: inline;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: bold;
+margin-left: 16px;
+font-family: 'Montserrat';
+}
+
+header li a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: cornsilk;
+    text-decoration: none;
+}
+
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.articles {
+    display: flex;
+    justify-content: space-between;
+}
+
+.articles article img {
+    height: 220px;
+    width: 26em;
+}
+
+.articles article {
+    width: 30%;
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2, .articles article {
+    margin-bottom: 16px;
+}
+
+.articles article h3 {
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.articles article a {
+background-color: rgb(255, 0, 0);
+color: black;
+padding: 8px;
+display: inline-block;
+text-decoration: none;
+font-weight: bolder;
+margin-top: 0px;
+margin-left: 0px;
+}
+
+.articles article a:hover {
+    text-decoration: underline;
+}
+
+.articles article p, .articles article a {
+    font-family: sans-serif;
+    color: #ffffff;
+}
+
+.articles article h3 {
+    font-size: 22px;
+    color: #ffffff;
+
+}
+
+section h2 {
+    font-size: 34px;
+    color: #ffffff;
+    font-family: 'Montserrat';
+}
+
+#rodape {
+    font-size: 1.1em;
+    margin-left: 32em;
+    margin-top: 3em;
+    color: white;
+}
+
+#link {
+    position: fixed;
+    right: 20px;
+    bottom: 15px;
+    transform: rotate(180deg);
+}
