@@ -6,21 +6,33 @@
 }
 
 .cabeçalho {
-    background: rgb(24,24,24);
-    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgb(202, 3, 3) 10%, rgb(180, 8, 8) 25%, rgb(137, 0, 0) 40%, rgba(8,8,8,1) 96%);
+    background-color: black;
     display: flex;
     flex-direction: row;
     padding: 0px;
 }
 
 .rodape {
-    background: rgb(24,24,24);
-    background: linear-gradient(90deg, rgba(8,8,8,1) 4%, rgba(137,0,0,1) 86%, rgba(180,8,8,1) 50%, rgba(202,3,3,1) 15%, rgba(255,0,0,1) 0%);
-    padding: 8px;
+    background-color: black;
+    margin: 2%;
 }
 
-#gamespage, #novidadespage, #enter, #tech {
-    background-color: rgb(8, 8, 8);
+#gamespage {
+    background-image: radial-gradient(circle at 50% -20.71%, #c665ff 0, #a351ff 25%, #783cf2 50%, #4029e3 75%, #001cd6 100%);
+
+}
+
+#novidadespage {
+    background-image: radial-gradient(circle at 50% -20.71%, #ff6565 0, #ff5151 25%, #f23c3c 50%, #e32929 75%, #d60000 100%);
+
+}
+
+#enter {
+    background-image: radial-gradient(circle at 50% -20.71%, #65ff6f 0, #51ff51 25%, #51f23c 50%, #3fe329 75%, #00d607 100%);
+}
+
+#tech {
+    background-image: radial-gradient(circle at 50% -20.71%, #5570f8 0, #5162ff 25%, #3c54f2 50%, #2c29e3 75%, #001cd6 100%);
 }
 
 h1 {
@@ -82,6 +94,11 @@ header li a {
     width: 26em;
 }
 
+.articles article img:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
 .articles article {
     width: 30%;
 }
@@ -99,8 +116,23 @@ section h2, .articles article {
     margin-bottom: 20px;
 }
 
+.techa {
+    background-image: radial-gradient(circle at 50% -20.71%, #1dbff5 0, #1dbbf9 25%, #16c5f5 50%, #15a7d8 75%, #00a8d6 100%);
+}
+
+.entera {
+    background-image: radial-gradient(circle at 50% -20.71%, #14450b 0, #094e0f 25%, #08580f 50%, #064b05 75%, #0c5100 100%);
+}
+
+.novia {
+    background-image: radial-gradient(circle at 50% -20.71%, #450b0b 0, #4e0909 25%, #580808 50%, #4b0505 75%, #510000 100%);
+}
+
+.gamea {
+    background-image: radial-gradient(circle at 50% -20.71%, #450b42 0, #46094e 25%, #580849 50%, #4b053e 75%, #3e0051 100%);
+}
+
 .articles article a {
-background-color: rgb(255, 0, 0);
 color: black;
 padding: 8px;
 display: inline-block;
@@ -112,6 +144,8 @@ margin-left: 0px;
 
 .articles article a:hover {
     text-decoration: underline;
+    transform: scale(1.2);
+    transition: transform 0.3s;
 }
 
 .articles article p, .articles article a {

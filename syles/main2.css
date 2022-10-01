@@ -2,8 +2,29 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: rgb(8, 8, 8);
 }
+
+body {
+    background-image: radial-gradient(circle at 50% -20.71%, #272727 0, #202020 25%, #1a1a1a 50%, #0a0b0b 75%, #000000 100%);
+}
+
+a   {
+    background-image: radial-gradient(circle at 50% -20.71%, #000000 0, #050505 25%, #000000 100%);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bolder;
+    border-radius: 18%;
+    margin-top: 0px;
+    margin-left: 0px;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+        transform: scale(1.2);
+        transition: transform 0.3s;
+    }
 
 .articles img {
     width: 100%;
