@@ -94,11 +94,6 @@ header li a {
     width: 26em;
 }
 
-.articles article img:hover {
-    transform: scale(1.1);
-    transition: transform 0.2s;
-}
-
 .articles article {
     width: 30%;
 }
@@ -145,7 +140,7 @@ margin-left: 0px;
 .articles article a:hover {
     text-decoration: underline;
     transform: scale(1.2);
-    transition: transform 0.3s;
+    transition: transform 0.45s;
 }
 
 .articles article p, .articles article a {
