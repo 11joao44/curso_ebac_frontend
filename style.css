@@ -1,12 +1,11 @@
+/* - adicionando uma fonte externa - */
 @font-face {
     font-family: FuturaPT;
     src: url(/font/FuturaPTMedium.otf);
 }
 
-.container-flex {
-    display: flex;
-}
-
+/* - removendo o espaço do navegador, deixando ele com um valor padrão. -
+   - adicionando a fonte para todo o site e dando um espaçamento para as letras */
 * {
     margin: 0;
     padding: 0;
@@ -15,61 +14,61 @@
     letter-spacing: 1px;
 }
 
+/* - adicionando o fundo do site, no-repeat para que a imagem não se repita, cover para preencher a tela toda - */
 body {
     background-image: url(/imagens/bg-login.ddf133c.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+/* - adicionando o cor de fundo para o formulario e centralizando, e arredodando as bordas - */
 .cadastro {
     background: #f5f6f7;
     margin: 2.5% 33%;
     border-radius: 10px;
 }
 
+/* - adicioando espaçamento dos campo referente as beiradas do formulario - */
 form {
     padding: 20px 40px;
 }
 
-/* - adicionando a dimensão da largura e que deve ocupar 100%
-   - e centralizando na horizontal */
+
+
+/* - configurando a altura do formulario */
 .container {
-    position: relative;
-    max-width: 100%;
     max-height: 1000px;
-    margin: 0 auto;
-    z-index: 10;
 }
 
+/* - posicionando o titulo do formulario e adicionando uma linha, alterando tamanho da fonte - */
 .titulo {
     padding: 30px 35px 0;
     border-bottom: 1px solid #bdbdbd;
     display: flex;
     margin-bottom: 20px;
-    font-weight: 800;
     font-size: 26px;
-    line-height: 1;
     color: #cba4e9; 
     line-height: 1;
 }
 
-.cabeçalho {
-    padding-top: 10px;
-    padding-bottom: 15px;
-    margin-right: 40px;
-    cursor: pointer;
-}
-
+/* - adicionado cor das letrar um linha roxa embaixo do titulo - */
 .cabeçalhoSpan {
     color: #000;
     border-bottom: 4px solid #8654cd;
 }
 
-/* - adicionando espaçamento na parte de baxio de um div com titulo e campo, para distancia das demais*/
+/* - distanciando o titulo da linha roxa - */
+.cabeçalho {
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+/* - adicionando espaçamento na parte de baixo de um div com titulo e campo, para distancia das demais*/
 .form-campo {
     margin-bottom: 16px;
 }
 
+/* - posicionando o "placeholder!" no centro do campo, e colocando uma transição quando voltar para o posicionamneto padrão - */
 .form-campo span {
     position: absolute;
     font-size: 0.7em;
@@ -79,27 +78,27 @@ form {
     transition: all 300ms ease;
 }
 
+/* - fazendo efeito de movimentação do "placeholder!" afastando do centro do campo- */
 .form-campo .spanFocus {
     font-size: 0.7em;
     margin: -12px -10px;
 }
 
+/* - colocando cor na mensagem de erro  dos inputs, meio de validação do formulario - */
 .form-campo .error {
     color: #f15454ab;
 }
 
-/* - vamos determinar que as tags selecionadas vão ocupar 100% do container referente a section que ele pertecem.
-   -  aplicando display block novamente e um padding de 8px para todos os lado*/
+/* - tamanho do campo cor quando ira ocupar no fomulario removndo bordas e - */
 .form-campo input {
     width: 100%;
     background-color: #fff;
-    display: block;
     padding: 13px;
-    font-weight: bold;
     border: 2px solid #00000000;
     outline: none;
 }
 
+/* - efeito de quando focar o campo- */
 .form-campo input:focus {
     background-color: #ffffff80;
     border: 2px solid #e9e9e9;
@@ -107,26 +106,7 @@ form {
 
 
 
-/* - estilização do botão de toda a pagina, praticamente o basica quase que padrão em questão do design */
-button {
-    display: block;
-    background-color: #8654cd;
-    justify-content: center;
-    outline: none;
-    padding: 0 35px;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    overflow: hidden;
-    transition: 300ms ease;
-}
-
-button:hover {
-    background-color: #7b3fce;
-    transform: scale(102%);
-    transition: 300ms ease;
-}
-
+/* - estilização do botão até basico, adicioando uma trasição para o efeito do hover  */
 .cadastrar-btn {
     margin: 40px 0 20px;
     width: 100%;
@@ -141,12 +121,19 @@ button:hover {
     cursor: pointer;
 }
 
-/* - adicioando cor de fundo header e footer e tamanho com padding */
-footer  {
-    background-color: #101010;
-    color: #fff;
+/* - adicionando uma cor maior forte, aumento no tamanho do botão e uma trasição de quando passar o mouse em cima - */
+button:hover {
+    background-color: #7b3fce;
+    transform: scale(102%);
+    transition: 300ms ease;
 }
 
+/* - cor de fundo do rodapé - */
+footer  {
+    background-color: #101010;
+}
+
+/* - removendo o efeito azul do linha  em baixo da tag 'a' um espaçamento da na letras, tamanho da fonte e distanciameto na esquerda */
 footer a {
     text-decoration: none;
     color: #fff;
@@ -155,44 +142,49 @@ footer a {
     letter-spacing: 1.5px;
 }
 
+/* - espaçamento na parte de baixo de cada topico - */
 .texto {
     margin-bottom: 10px;
 }
 
+/* - colocando cada lista de topicos uma ao lado da outra e espaçamento na direita do site - */
 .topicos {
     margin-right: 150px;
     display: flex;
 }
 
+/* - espaçamento das imagens referente ao site na esquerda e em baixo das imagens - */
 .logo, 
 .img2 {
     margin-left: 100px;
     margin-bottom: 25px;
 }
 
+/* - alterando tamanho da primeira imagens da ebac - */
 .logo img {
     width: 254px;
 }
 
+/* - alterando tamanho da primeira imagens da latam - */
 .img2 img{
     width: 84px;
 }
 
+/* - imagens  topico um ao lado do outro espaçando no site, e um padding em cima e embaixo de 55- */
 .containers {
     display: flex;
     justify-content: space-between;
     padding: 55px 0;
 }
 
+/* - tamanho e espaçamento do paragrafo - */
 p {
     font-size: 0.8em;
     margin-left: 80px;
+    color: #fff;
 }
 
-.copy {
-    display: flex;
-}
-
+/* - linha entre os imagens e topido do contatos do site- */
 .politica {
     border-bottom: 1px solid #bdbdbd;
     display: flex;
@@ -202,14 +194,13 @@ p {
     margin: 0 5%;
 }
 
+/* - espaçando do texto de politicas da linha em baixo e cor do texto - */
 .rodape {
     padding-bottom: 60px;
-}
-
-.rodapeSpan {
     color: #ffffff;
 }
 
+/* - alinhando os contatos distribuindo o espaçamento dos contanto  - */
 footer .container {
     align-items: center;
     justify-content: space-between;
@@ -217,25 +208,35 @@ footer .container {
     margin-right: 75px;
 }
 
+/* - removendo ponto que vem de padrão do li - */
 footer li {
     list-style: none;
 }
 
+/* - alterando tamanho da imagens do contato - */
 footer ul img {
     height: 30px;
 }
 
+/* - colocando contato um ao lado do outro - */
 .div {
     display: flex;
 }
 
+/* - distanciamento do esquerda do site cor e padding de 5px - */
 .contato h3{
     margin-left: 75px;
     padding: 5px;
+    color: #fff;
 }
 
+/* - tamando da fonte do paragrafo e espaçamento - */
 .p {
     padding: 25px 0;
     font-size: 18px;
 }
 
+/* - adicioando um ao lado do outro - */
+.container-flex {
+    display: flex;
+}
