@@ -1,0 +1,63 @@
+@use 'config/reset';
+@use 'config/variaveis';
+@use 'secao/product';
+
+body {
+    background-color: variaveis.$cor_de_fundo;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    color: variaveis.$cor_font;
+}
+
+header {
+    background: variaveis.$cor_principal;    
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;
+    }
+
+    .menu {
+        display: flex;
+    }
+    
+    .menu li {
+        font-weight: bold;
+        margin-left: 24px;
+    }
+    
+    .menu li a {
+        color: variaveis.$cor_font;
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: variaveis.$tablet) {
+    .container {
+        max-width: 80%;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 3%;
+    }
+}
+
+@media screen and (max-width: variaveis.$mobile) {
+    .products {
+        display: block;
+    }
+
+    .product-item  {
+        margin-bottom: 32px;
+    }
+}
