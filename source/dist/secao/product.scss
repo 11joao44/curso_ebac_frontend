@@ -1,0 +1,44 @@
+@use '../config/variaveis';
+
+
+section {
+    padding: 56px 0;
+
+    h4, p {
+    margin-top: 8px;
+    }
+}
+
+.products {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 32.66%);
+    column-gap: 1%;
+    row-gap: 4%;
+    width: 100%;
+
+    .product-item img {
+        width: 100%;
+        border-radius: 16px;
+    }
+}
+
+.product-button {
+    display: block;
+    border: 1px solid variaveis.$cor_button ;
+    color: variaveis.$cor_font;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 8px;
+    margin-top: 16px;
+    text-decoration: none;
+    transition: opacity .3s ease-in-out;
+
+    &:hover {
+        background-image: variaveis.$cor_principal;
+        border-radius: inherit;
+        color: variaveis.$cor_font;
+        border-radius: 8px;
+    }
+}
+
