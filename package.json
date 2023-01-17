@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.57.1"
+  },
+  "name": "tarefa-gulp",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-obfuscate": "^0.2.9"
+  },
+  "scripts": {
+    "gulp": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "João Pedro",
+  "license": "ISC",
+  "description": "Tarefa de Gulp EBAC"
+}
