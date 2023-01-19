@@ -1,0 +1,75 @@
+@import "./config/reset.less" ;
+@import "./config/maps.less" ;
+@import "./main.less" ;
+@import "./secao/product.less";
+
+body {
+    background-color: #colors[background_color];
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    color: #colors[text_color];
+}
+
+header {
+    background: #colors[cor_principal];    
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;
+    }
+
+    .menu {
+        display: flex;
+    }
+    
+    .menu li {
+        font-weight: bold;
+        margin-left: 24px;
+    }
+    
+    .menu li a {
+        color: #colors[text_color];
+        text-decoration: none;
+    }
+}
+
+@media @breakpointsTablet {
+
+    .container {
+        max-width: 720px;
+        width: 100%;
+    }
+
+    .products {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 2%;
+        margin-bottom: 150px;
+    }
+
+    .product-item  {
+        margin-bottom: 32px;
+    }
+}
+
+
+@media @breakpointsMobile {
+
+    .container {
+        max-width: 320px;
+        width: 100%;
+    }
+
+    .products {
+        display: block;
+    }
+}
