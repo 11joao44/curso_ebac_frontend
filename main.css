@@ -1,0 +1,25 @@
+#form {
+  background: linear-gradient(to bottom, #3498db, #2980b9);
+  padding: 20px;
+  border-radius: 5px;
+}
+#form label {
+  display: block;
+  margin-bottom: 10px;
+}
+#form input {
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+}
+#form input {
+  background-color: #3498db;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
