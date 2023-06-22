@@ -17,13 +17,13 @@ describe('Testes para a agenda de contatos', () => {
   it('Deve adiciona um novo contato', () => {
 
       // Preenchendo o campo do type text com o valor 'João Pedro'
-      cy.get('input[type="text"]').type('João Pedro')
+      cy.get('input[type="text"]').type('Zoro uchiha')
       
       // Preenchendo o campo do type email com o valor 'teste123@gmail.com'
-      cy.get('input[type="email"]').type('teste123@gmail.com')
+      cy.get('input[type="email"]').type('onepice@gmail.com')
 
       // Preenchendo o campo do type telefone com o valor '00 999999999'
-      cy.get('input[type="tel"]').type('00 999999999')
+      cy.get('input[type="tel"]').type('66 666666666')
 
       // Obtendo elemento com a classe 'adicionar' e realizar o evento de click
       cy.get('.adicionar').click()
